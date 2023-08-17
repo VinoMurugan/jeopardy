@@ -10,4 +10,56 @@ body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+#play-board {
+    width: 50%;
+    height: 200px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    background-color: rgb(144, 127, 255);
+    gap: 10px;
+    padding: 20px;
+}
+
+
+
+.title{
+    
+        font-weight: bold;
+        text-align: center;
+      
+    }
+
+.play-card {
+    text-align: center;                                      
+    font-size: 16px;
+    margin: 5px;
+    padding: 10px;
+    line-height: 100px;
+    width: 50px;
+    height: 20px;
+    cursor: pointer;
+    background-color: aqua;
+    border-radius: 5px;
+    vertical-align: top;
+    display: flex;
+   
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.play-card::before {
+    content: attr(data-card-value); 
+    position: absolute; 
+    top: -20px; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    font-weight: bold;
+    font-size: 14px; 
+}
+
+
+
+
 
