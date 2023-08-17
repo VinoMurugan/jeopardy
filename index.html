@@ -4,23 +4,49 @@
     <meta charset="UTF-8">
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
     <link rel="stylesheet" href="style.css">
-   <script src="script.js"></script>
     <title>Jeopardy Game</title>
 </head>
 <body>
     <h1>HERE IS JEOPARDY GAME</h1>
-    <div id ="play-board">
-        <div class="title">Food and Drink</div>
-        <div class="title">Movies</div>
-        <div class="title">History</div>
-        <div class="title">Science</div>
-        <div class="title">geography</div>
+     <div id="play-board">
+        
+        <div class="category-column">
+        <div class="play-card" onclick="showQuestion('Question: Which vegetable is commonly known as a starchy tuber and is often fried to make French fries?', 'Answer: Potato')"> $10</div>
+        <div class="play-card" onclick="showQuestion('Question: What type of pasta is shaped like small rice grains and is often used in soups?','Answer: Orzo')"> $20</div>
+        <div class="play-card" onclick="showQuestion('Question: What is the main ingredient in the Italian dish risotto?','Answer: Arborio rice')"> $30</div>
+        <div class="play-card" onclick="showQuestion('Question: Which fruit is known as the king of fruits and has a strong, distinctive smell?','Answer: Durian')"> $40</div>
+        </div>
+        <div class="category-column">
+        <div class="play-card" onclick="showQuestion('Question: What is the smallest unit of matter that retains the properties of an element?','Answer: Atom')"> $10</div>
+
+        <div class="play-card" onclick="showQuestion('Question: What is the process by which plants use sunlight to convert carbon dioxide and water into glucose and oxygen?','Answer: Photosynthesis')"> $20</div>
+
+        <div class="play-card" onclick="showQuestion('Question: Which famous scientist formulated the theory of relativity and is known for the equation E=mc^2?','Answer: Albert Einstein')"> $30</div>
+
+        <div class="play-card" onclick="showQuestion('Question: What is the chemical symbol for the element with the atomic number 6, which is the basis of organic chemistry?','Answer: Carbon')"> $40</div>
+
+        </div>
+        <div class="category-column">
+        <div class="play-card" onclick="showQuestion('Movies',0)"> $10</div>
+
+        <div class="play-card" onclick="showQuestion('Movies',1)"> $20</div>
+
+        <div class="play-card" onclick="showQuestion('Movies',2)"> $30</div>
+
+        <div class="play-card" onclick="showQuestion('Movies',3)"> $40</div>
+        </div>
+
+        <div class="category-column">
+
+        <div class="play-card" onclick="showQuestion('History',0)"> $10</div>
+
+        <div class="play-card" onclick="showQuestion('History',1)"> $20</div>
+
+        <div class="play-card" onclick="showQuestion('History',2)"> $30</div>
+
+        <div class="play-card" onclick="showQuestion('History',3)"> $40</div>
 
     </div>
-    <div id="question">
-        
-    </div>
-   
+        <script src="script.js"></script>
 </body>
 </html>
-
