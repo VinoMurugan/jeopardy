@@ -2,51 +2,67 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Jeopardy Game</title>
 </head>
 <body>
     <h1>HERE IS JEOPARDY GAME</h1>
-     <div id="play-board">
+
+    <div id="player-score">Score : $0</div>
+    
+    </div>
+
+    <div id="play-board">
+    
+        <div class="category-column">
+        
+        <div class="play-card" onclick="showQuestion('Question: Which vegetable is commonly known as a starchy tuber and is often fried to make French fries?', 'Answer: Potato','$10')"> $10</div>
+        
+        <div class="play-card" onclick="showQuestion('Question: What type of pasta is shaped like small rice grains and is often used in soups?','Answer: Orzo','$10')"> $20</div>
+        
+        <div class="play-card" onclick="showQuestion('Question: What is the main ingredient in the Italian dish risotto?','Answer: Arborio rice','$10')"> $30</div>
+        
+        <div class="play-card" onclick="showQuestion('Question: Which fruit is known as the king of fruits and has a strong, distinctive smell?','Answer: Durian','$10')"> $40</div>
+        
+        </div>
+       
+        <div class="category-column">
+        
+        <div class="play-card" onclick="showQuestion('Question: What is the smallest unit of matter that retains the properties of an element?','Answer: Atom','$10')"> $10</div>
+
+        <div class="play-card" onclick="showQuestion('Question: What is the process by which plants use sunlight to convert carbon dioxide and water into glucose and oxygen?','Answer: Photosynthesis','$10')"> $20</div>
+
+        <div class="play-card" onclick="showQuestion('Question: Which famous scientist formulated the theory of relativity and is known for the equation E=mc^2?','Answer: Albert Einstein','$10')"> $30</div>
+
+        <div class="play-card" onclick="showQuestion('Question: What is the chemical symbol for the element with the atomic number 6, which is the basis of organic chemistry?','Answer: Carbon','$10')"> $40</div>
+
+        </div>
         
         <div class="category-column">
-        <div class="play-card" onclick="showQuestion('Question: Which vegetable is commonly known as a starchy tuber and is often fried to make French fries?', 'Answer: Potato')"> $10</div>
-        <div class="play-card" onclick="showQuestion('Question: What type of pasta is shaped like small rice grains and is often used in soups?','Answer: Orzo')"> $20</div>
-        <div class="play-card" onclick="showQuestion('Question: What is the main ingredient in the Italian dish risotto?','Answer: Arborio rice')"> $30</div>
-        <div class="play-card" onclick="showQuestion('Question: Which fruit is known as the king of fruits and has a strong, distinctive smell?','Answer: Durian')"> $40</div>
-        </div>
-        <div class="category-column">
-        <div class="play-card" onclick="showQuestion('Question: What is the smallest unit of matter that retains the properties of an element?','Answer: Atom')"> $10</div>
 
-        <div class="play-card" onclick="showQuestion('Question: What is the process by which plants use sunlight to convert carbon dioxide and water into glucose and oxygen?','Answer: Photosynthesis')"> $20</div>
+        <div class="play-card" onclick="showQuestion('Question: In the movie The Shawshank Redemption, what does Andy Dufresne famously use to escape from the prison?','Answer: A tunnel dug through the wall with a rock hammer.','$10')"> $10</div>
 
-        <div class="play-card" onclick="showQuestion('Question: Which famous scientist formulated the theory of relativity and is known for the equation E=mc^2?','Answer: Albert Einstein')"> $30</div>
+        <div class="play-card" onclick="showQuestion('Question: Who played the iconic character James Bond in the movie Casino Royale (2006)?','Answer: Daniel Craig.','$10')"> $20</div>
 
-        <div class="play-card" onclick="showQuestion('Question: What is the chemical symbol for the element with the atomic number 6, which is the basis of organic chemistry?','Answer: Carbon')"> $40</div>
+        <div class="play-card" onclick="showQuestion('Question: Which movie features a clownfish named Marlin who embarks on a journey to find his son Nemo?','Answer: Finding Nemo','$10')"> $30</div>
 
-        </div>
-        <div class="category-column">
-        <div class="play-card" onclick="showQuestion('Movies',0)"> $10</div>
-
-        <div class="play-card" onclick="showQuestion('Movies',1)"> $20</div>
-
-        <div class="play-card" onclick="showQuestion('Movies',2)"> $30</div>
-
-        <div class="play-card" onclick="showQuestion('Movies',3)"> $40</div>
+        <div class="play-card" onclick="showQuestion('Question: Which film directed by Quentin Tarantino follows the intertwining storylines of various characters over the course of several hours?','Answer: Pulp Fiction.','$10')"> $40</div>
+        
         </div>
 
         <div class="category-column">
 
-        <div class="play-card" onclick="showQuestion('History',0)"> $10</div>
+        <div class="play-card" onclick="showQuestion('Question: Who was the first President of the United States?','Answer: George Washington.','$10')"> $10</div>
 
-        <div class="play-card" onclick="showQuestion('History',1)"> $20</div>
+        <div class="play-card" onclick="showQuestion('Question: What event marked the start of World War I?','Answer: The assassination of Archduke Franz Ferdinand of Austria.','$10')"> $20</div>
 
-        <div class="play-card" onclick="showQuestion('History',2)"> $30</div>
+        <div class="play-card" onclick="showQuestion('Question: Which ancient civilization built the Great Pyramid of Giza?','Answer: The ancient Egyptians.','$10')"> $30</div>
 
-        <div class="play-card" onclick="showQuestion('History',3)"> $40</div>
+        <div class="play-card" onclick="showQuestion('Question: Who was the leader of the civil rights movement in the United States and gave the famous I Have a Dream speech?','Answer: Martin Luther King Jr.','$10')"> $40</div>
 
-    </div>
+        </div>
+        
         <script src="script.js"></script>
 </body>
 </html>
