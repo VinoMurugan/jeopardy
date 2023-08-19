@@ -2,7 +2,7 @@ body {
     margin : 0;
     padding: 0;
     background-color: rgb(46,46,46);
-    color: rgb(255,255,255);
+    color: rgb(236, 244, 240);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -11,24 +11,15 @@ body {
 }
 
 #play-board {
-    
-    width: 50%;
-    height: 200px;
+    width: 500px;
+    height: 260px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    background-color: rgb(144, 127, 255);
+    background-color: rgb(19, 16, 196);
     gap: 10px;
     padding: 20px;
 }
 
-
-
-.title{
-    
-        font-weight: bold;
-        text-align: center;
-      
-    }
 
 .play-card {
     text-align: center;                                      
@@ -36,14 +27,13 @@ body {
     margin: 5px;
     padding: 10px;
     line-height: 100px;
-    width: 50px;
-    height: 20px;
+    width: 70px;
+    height: 30px;
     cursor: pointer;
-    background-color: aqua;
-    border-radius: 5px;
+    background-color:rgba(0,0,0,0.1);
+    border: 1px solid rgb(25, 229, 195);
     vertical-align: top;
     display: flex;
-   
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -60,6 +50,11 @@ body {
     font-size: 14px; 
 }
 
+.category-column{
+    display: grid;
+  grid-template-columns: repeat(1, 4fr);  
+  grid-gap: 10px;
+}
 
 
 
